@@ -9,14 +9,14 @@ namespace GADE_POE
     public class Hero : Character
     {
 
-        public Hero(int x, int y, int maxHP) : base(x, y)
+        public Hero(int heroX, int heroY, int maxHP) : base(heroX, heroY)
         {
             charMaxHP = maxHP;
             charHP = charMaxHP;
             charDamage = 2;
             tileType = TileType.Hero;
         }
-        public Hero(int x, int y, int hp, int maxHP, int gold) : base(x, y) // For loading from save file
+        public Hero(int heroX, int heroY, int hp, int maxHP, int gold) : base(heroX, heroY) // For loading from save file
         {
             charHP = hp;
             charMaxHP = maxHP;

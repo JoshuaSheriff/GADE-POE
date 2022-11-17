@@ -4,3 +4,8 @@ C:\VEGA\VEGA Semester 2\VEGA GADE 2\Repos\GADE-POE\GADE-POE\GADE-POE\obj\Debug\G
 C:\VEGA\VEGA Semester 2\VEGA GADE 2\Repos\GADE-POE\GADE-POE\GADE-POE\obj\Debug\GADE_POE.Properties.Resources.resources
 C:\VEGA\VEGA Semester 2\VEGA GADE 2\Repos\GADE-POE\GADE-POE\GADE-POE\obj\Debug\GADE-POE.csproj.GenerateResource.cache
 C:\VEGA\VEGA Semester 2\VEGA GADE 2\Repos\GADE-POE\GADE-POE\GADE-POE\obj\Debug\GADE-POE.csproj.CoreCompileInputs.cache
+C:\VEGA\VEGA Semester 2\VEGA GADE 2\Repos\GADE-POE\GADE-POE\GADE-POE\bin\Debug\GADE-POE.exe.config
+C:\VEGA\VEGA Semester 2\VEGA GADE 2\Repos\GADE-POE\GADE-POE\GADE-POE\bin\Debug\GADE-POE.exe
+C:\VEGA\VEGA Semester 2\VEGA GADE 2\Repos\GADE-POE\GADE-POE\GADE-POE\bin\Debug\GADE-POE.pdb
+C:\VEGA\VEGA Semester 2\VEGA GADE 2\Repos\GADE-POE\GADE-POE\GADE-POE\obj\Debug\GADE-POE.exe
+C:\VEGA\VEGA Semester 2\VEGA GADE 2\Repos\GADE-POE\GADE-POE\GADE-POE\obj\Debug\GADE-POE.pdb

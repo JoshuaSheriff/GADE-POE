@@ -39,12 +39,13 @@
             this.lstEnemies = new System.Windows.Forms.ListBox();
             this.btnAttack = new System.Windows.Forms.Button();
             this.lblAttackPrompt = new System.Windows.Forms.Label();
+            this.btnStill = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnLeft
             // 
             this.btnLeft.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
-            this.btnLeft.Location = new System.Drawing.Point(12, 501);
+            this.btnLeft.Location = new System.Drawing.Point(12, 470);
             this.btnLeft.Name = "btnLeft";
             this.btnLeft.Size = new System.Drawing.Size(75, 69);
             this.btnLeft.TabIndex = 0;
@@ -54,7 +55,7 @@
             // btnUp
             // 
             this.btnUp.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
-            this.btnUp.Location = new System.Drawing.Point(117, 501);
+            this.btnUp.Location = new System.Drawing.Point(116, 470);
             this.btnUp.Name = "btnUp";
             this.btnUp.Size = new System.Drawing.Size(75, 69);
             this.btnUp.TabIndex = 1;
@@ -64,7 +65,7 @@
             // btnDown
             // 
             this.btnDown.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
-            this.btnDown.Location = new System.Drawing.Point(222, 501);
+            this.btnDown.Location = new System.Drawing.Point(221, 470);
             this.btnDown.Name = "btnDown";
             this.btnDown.Size = new System.Drawing.Size(75, 69);
             this.btnDown.TabIndex = 2;
@@ -74,7 +75,7 @@
             // btnRight
             // 
             this.btnRight.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
-            this.btnRight.Location = new System.Drawing.Point(324, 501);
+            this.btnRight.Location = new System.Drawing.Point(324, 470);
             this.btnRight.Name = "btnRight";
             this.btnRight.Size = new System.Drawing.Size(75, 69);
             this.btnRight.TabIndex = 3;
@@ -149,11 +150,21 @@
             this.lblAttackPrompt.TabIndex = 10;
             this.lblAttackPrompt.Text = "AttackPrompt";
             // 
+            // btnStill
+            // 
+            this.btnStill.Location = new System.Drawing.Point(12, 547);
+            this.btnStill.Name = "btnStill";
+            this.btnStill.Size = new System.Drawing.Size(387, 23);
+            this.btnStill.TabIndex = 11;
+            this.btnStill.Text = "No Movement";
+            this.btnStill.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 582);
+            this.Controls.Add(this.btnStill);
             this.Controls.Add(this.lblAttackPrompt);
             this.Controls.Add(this.btnAttack);
             this.Controls.Add(this.lstEnemies);
@@ -185,6 +196,7 @@
         private System.Windows.Forms.ListBox lstEnemies;
         private System.Windows.Forms.Button btnAttack;
         private System.Windows.Forms.Label lblAttackPrompt;
+        private System.Windows.Forms.Button btnStill;
     }
 }
 
