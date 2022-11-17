@@ -10,7 +10,7 @@ namespace GADE_POE
     {
         public Obstacle(int x, int y) : base(x, y)
         {
-            Type = TileType.Obstacle;
+            tileType = TileType.Obstacle;
         }
     }
 }
