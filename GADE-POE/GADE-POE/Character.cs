@@ -89,7 +89,7 @@ namespace GADE_POE
         }
 
 
-        public abstract Movement ReturnMove(Movement move = 0); // Returns a direction of movement
+        public abstract Movement ReturnMove(Movement move = 0);
 
         public abstract override string ToString();
 
