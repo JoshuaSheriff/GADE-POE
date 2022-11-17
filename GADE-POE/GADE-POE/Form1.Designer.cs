@@ -45,9 +45,10 @@
             // btnLeft
             // 
             this.btnLeft.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
-            this.btnLeft.Location = new System.Drawing.Point(12, 470);
+            this.btnLeft.Location = new System.Drawing.Point(16, 578);
+            this.btnLeft.Margin = new System.Windows.Forms.Padding(4);
             this.btnLeft.Name = "btnLeft";
-            this.btnLeft.Size = new System.Drawing.Size(75, 69);
+            this.btnLeft.Size = new System.Drawing.Size(100, 85);
             this.btnLeft.TabIndex = 0;
             this.btnLeft.Text = "<";
             this.btnLeft.UseVisualStyleBackColor = true;
@@ -56,9 +57,10 @@
             // btnUp
             // 
             this.btnUp.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
-            this.btnUp.Location = new System.Drawing.Point(116, 470);
+            this.btnUp.Location = new System.Drawing.Point(155, 578);
+            this.btnUp.Margin = new System.Windows.Forms.Padding(4);
             this.btnUp.Name = "btnUp";
-            this.btnUp.Size = new System.Drawing.Size(75, 69);
+            this.btnUp.Size = new System.Drawing.Size(100, 85);
             this.btnUp.TabIndex = 1;
             this.btnUp.Text = "/\\";
             this.btnUp.UseVisualStyleBackColor = true;
@@ -67,9 +69,10 @@
             // btnDown
             // 
             this.btnDown.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
-            this.btnDown.Location = new System.Drawing.Point(221, 470);
+            this.btnDown.Location = new System.Drawing.Point(295, 578);
+            this.btnDown.Margin = new System.Windows.Forms.Padding(4);
             this.btnDown.Name = "btnDown";
-            this.btnDown.Size = new System.Drawing.Size(75, 69);
+            this.btnDown.Size = new System.Drawing.Size(100, 85);
             this.btnDown.TabIndex = 2;
             this.btnDown.Text = "\\/";
             this.btnDown.UseVisualStyleBackColor = true;
@@ -78,9 +81,10 @@
             // btnRight
             // 
             this.btnRight.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
-            this.btnRight.Location = new System.Drawing.Point(324, 470);
+            this.btnRight.Location = new System.Drawing.Point(432, 578);
+            this.btnRight.Margin = new System.Windows.Forms.Padding(4);
             this.btnRight.Name = "btnRight";
-            this.btnRight.Size = new System.Drawing.Size(75, 69);
+            this.btnRight.Size = new System.Drawing.Size(100, 85);
             this.btnRight.TabIndex = 3;
             this.btnRight.Text = ">";
             this.btnRight.UseVisualStyleBackColor = true;
@@ -89,32 +93,33 @@
             // btnSave
             // 
             this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.btnSave.Location = new System.Drawing.Point(12, 12);
+            this.btnSave.Location = new System.Drawing.Point(16, 15);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(4);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(387, 29);
+            this.btnSave.Size = new System.Drawing.Size(516, 36);
             this.btnSave.TabIndex = 4;
             this.btnSave.Text = "SAVE";
             this.btnSave.UseVisualStyleBackColor = true;
-
             // 
             // btnLoad
             // 
             this.btnLoad.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.btnLoad.Location = new System.Drawing.Point(405, 12);
+            this.btnLoad.Location = new System.Drawing.Point(540, 15);
+            this.btnLoad.Margin = new System.Windows.Forms.Padding(4);
             this.btnLoad.Name = "btnLoad";
-            this.btnLoad.Size = new System.Drawing.Size(383, 29);
+            this.btnLoad.Size = new System.Drawing.Size(511, 36);
             this.btnLoad.TabIndex = 5;
             this.btnLoad.Text = "LOAD";
             this.btnLoad.UseVisualStyleBackColor = true;
-
             // 
             // lblMap
             // 
             this.lblMap.AutoSize = true;
-            this.lblMap.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.lblMap.Location = new System.Drawing.Point(12, 48);
+            this.lblMap.Font = new System.Drawing.Font("Consolas", 25F);
+            this.lblMap.Location = new System.Drawing.Point(16, 59);
+            this.lblMap.Margin = new System.Windows.Forms.Padding(0, 2, 0, 2);
             this.lblMap.Name = "lblMap";
-            this.lblMap.Size = new System.Drawing.Size(139, 31);
+            this.lblMap.Size = new System.Drawing.Size(150, 40);
             this.lblMap.TabIndex = 6;
             this.lblMap.Text = "GameMap";
             // 
@@ -122,7 +127,8 @@
             // 
             this.lblPlayerStats.AutoSize = true;
             this.lblPlayerStats.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.lblPlayerStats.Location = new System.Drawing.Point(405, 48);
+            this.lblPlayerStats.Location = new System.Drawing.Point(540, 59);
+            this.lblPlayerStats.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPlayerStats.Name = "lblPlayerStats";
             this.lblPlayerStats.Size = new System.Drawing.Size(154, 31);
             this.lblPlayerStats.TabIndex = 7;
@@ -131,17 +137,20 @@
             // lstEnemies
             // 
             this.lstEnemies.FormattingEnabled = true;
-            this.lstEnemies.Location = new System.Drawing.Point(405, 400);
+            this.lstEnemies.ItemHeight = 16;
+            this.lstEnemies.Location = new System.Drawing.Point(540, 492);
+            this.lstEnemies.Margin = new System.Windows.Forms.Padding(4);
             this.lstEnemies.Name = "lstEnemies";
-            this.lstEnemies.Size = new System.Drawing.Size(383, 95);
+            this.lstEnemies.Size = new System.Drawing.Size(509, 116);
             this.lstEnemies.TabIndex = 8;
             // 
             // btnAttack
             // 
             this.btnAttack.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.btnAttack.Location = new System.Drawing.Point(405, 501);
+            this.btnAttack.Location = new System.Drawing.Point(540, 617);
+            this.btnAttack.Margin = new System.Windows.Forms.Padding(4);
             this.btnAttack.Name = "btnAttack";
-            this.btnAttack.Size = new System.Drawing.Size(383, 38);
+            this.btnAttack.Size = new System.Drawing.Size(511, 47);
             this.btnAttack.TabIndex = 9;
             this.btnAttack.Text = "Attack";
             this.btnAttack.UseVisualStyleBackColor = true;
@@ -151,7 +160,8 @@
             // 
             this.lblAttackPrompt.AutoSize = true;
             this.lblAttackPrompt.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
-            this.lblAttackPrompt.Location = new System.Drawing.Point(406, 546);
+            this.lblAttackPrompt.Location = new System.Drawing.Point(541, 672);
+            this.lblAttackPrompt.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblAttackPrompt.Name = "lblAttackPrompt";
             this.lblAttackPrompt.Size = new System.Drawing.Size(117, 22);
             this.lblAttackPrompt.TabIndex = 10;
@@ -159,9 +169,10 @@
             // 
             // btnStill
             // 
-            this.btnStill.Location = new System.Drawing.Point(12, 547);
+            this.btnStill.Location = new System.Drawing.Point(16, 673);
+            this.btnStill.Margin = new System.Windows.Forms.Padding(4);
             this.btnStill.Name = "btnStill";
-            this.btnStill.Size = new System.Drawing.Size(387, 23);
+            this.btnStill.Size = new System.Drawing.Size(516, 28);
             this.btnStill.TabIndex = 11;
             this.btnStill.Text = "No Movement";
             this.btnStill.UseVisualStyleBackColor = true;
@@ -169,9 +180,9 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 582);
+            this.ClientSize = new System.Drawing.Size(1067, 716);
             this.Controls.Add(this.btnStill);
             this.Controls.Add(this.lblAttackPrompt);
             this.Controls.Add(this.btnAttack);
@@ -184,6 +195,7 @@
             this.Controls.Add(this.btnDown);
             this.Controls.Add(this.btnUp);
             this.Controls.Add(this.btnLeft);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "GAMEBOY Adv";
             this.Load += new System.EventHandler(this.Form1_Load);

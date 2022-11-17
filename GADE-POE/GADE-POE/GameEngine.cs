@@ -17,7 +17,7 @@ namespace GADE_POE
         }
         public GameEngine()
         {
-            GameMap = new Map(12, 16, 6, 10, 4, 3);
+            GameMap = new Map(10, 15, 5, 10, 4, 3);
         }
 
         public void MovePlayer(Character.Movement direction)
