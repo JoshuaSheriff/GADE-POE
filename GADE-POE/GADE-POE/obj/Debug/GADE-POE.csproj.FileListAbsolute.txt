@@ -1,0 +1,6 @@
+C:\VEGA\VEGA Semester 2\VEGA GADE 2\Repos\GADE-POE\GADE-POE\GADE-POE\obj\Debug\GADE-POE.csproj.AssemblyReference.cache
+C:\VEGA\VEGA Semester 2\VEGA GADE 2\Repos\GADE-POE\GADE-POE\GADE-POE\obj\Debug\GADE-POE.csproj.SuggestedBindingRedirects.cache
+C:\VEGA\VEGA Semester 2\VEGA GADE 2\Repos\GADE-POE\GADE-POE\GADE-POE\obj\Debug\GADE_POE.Form1.resources
+C:\VEGA\VEGA Semester 2\VEGA GADE 2\Repos\GADE-POE\GADE-POE\GADE-POE\obj\Debug\GADE_POE.Properties.Resources.resources
+C:\VEGA\VEGA Semester 2\VEGA GADE 2\Repos\GADE-POE\GADE-POE\GADE-POE\obj\Debug\GADE-POE.csproj.GenerateResource.cache
+C:\VEGA\VEGA Semester 2\VEGA GADE 2\Repos\GADE-POE\GADE-POE\GADE-POE\obj\Debug\GADE-POE.csproj.CoreCompileInputs.cache
