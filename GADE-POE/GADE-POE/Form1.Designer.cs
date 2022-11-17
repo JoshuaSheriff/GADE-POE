@@ -32,8 +32,8 @@
             this.btnUp = new System.Windows.Forms.Button();
             this.btnDown = new System.Windows.Forms.Button();
             this.btnRight = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.btnLoad = new System.Windows.Forms.Button();
             this.lblMap = new System.Windows.Forms.Label();
             this.lblPlayerStats = new System.Windows.Forms.Label();
             this.lstEnemies = new System.Windows.Forms.ListBox();
@@ -51,6 +51,7 @@
             this.btnLeft.TabIndex = 0;
             this.btnLeft.Text = "<";
             this.btnLeft.UseVisualStyleBackColor = true;
+            this.btnLeft.Click += new System.EventHandler(this.btnLeft_Click);
             // 
             // btnUp
             // 
@@ -61,6 +62,7 @@
             this.btnUp.TabIndex = 1;
             this.btnUp.Text = "/\\";
             this.btnUp.UseVisualStyleBackColor = true;
+            this.btnUp.Click += new System.EventHandler(this.btnUp_Click);
             // 
             // btnDown
             // 
@@ -71,6 +73,7 @@
             this.btnDown.TabIndex = 2;
             this.btnDown.Text = "\\/";
             this.btnDown.UseVisualStyleBackColor = true;
+            this.btnDown.Click += new System.EventHandler(this.btnDown_Click);
             // 
             // btnRight
             // 
@@ -81,26 +84,29 @@
             this.btnRight.TabIndex = 3;
             this.btnRight.Text = ">";
             this.btnRight.UseVisualStyleBackColor = true;
+            this.btnRight.Click += new System.EventHandler(this.btnRight_Click);
             // 
-            // button4
+            // btnSave
             // 
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.button4.Location = new System.Drawing.Point(12, 12);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(387, 29);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "SAVE";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.btnSave.Location = new System.Drawing.Point(12, 12);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(387, 29);
+            this.btnSave.TabIndex = 4;
+            this.btnSave.Text = "SAVE";
+            this.btnSave.UseVisualStyleBackColor = true;
+
             // 
-            // button5
+            // btnLoad
             // 
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.button5.Location = new System.Drawing.Point(405, 12);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(383, 29);
-            this.button5.TabIndex = 5;
-            this.button5.Text = "LOAD";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btnLoad.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.btnLoad.Location = new System.Drawing.Point(405, 12);
+            this.btnLoad.Name = "btnLoad";
+            this.btnLoad.Size = new System.Drawing.Size(383, 29);
+            this.btnLoad.TabIndex = 5;
+            this.btnLoad.Text = "LOAD";
+            this.btnLoad.UseVisualStyleBackColor = true;
+
             // 
             // lblMap
             // 
@@ -139,6 +145,7 @@
             this.btnAttack.TabIndex = 9;
             this.btnAttack.Text = "Attack";
             this.btnAttack.UseVisualStyleBackColor = true;
+            this.btnAttack.Click += new System.EventHandler(this.btnAttack_Click);
             // 
             // lblAttackPrompt
             // 
@@ -158,6 +165,7 @@
             this.btnStill.TabIndex = 11;
             this.btnStill.Text = "No Movement";
             this.btnStill.UseVisualStyleBackColor = true;
+            this.btnStill.Click += new System.EventHandler(this.btnStill_Click);
             // 
             // Form1
             // 
@@ -170,14 +178,15 @@
             this.Controls.Add(this.lstEnemies);
             this.Controls.Add(this.lblPlayerStats);
             this.Controls.Add(this.lblMap);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
+            this.Controls.Add(this.btnLoad);
+            this.Controls.Add(this.btnSave);
             this.Controls.Add(this.btnRight);
             this.Controls.Add(this.btnDown);
             this.Controls.Add(this.btnUp);
             this.Controls.Add(this.btnLeft);
             this.Name = "Form1";
             this.Text = "GAMEBOY Adv";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -189,8 +198,8 @@
         private System.Windows.Forms.Button btnUp;
         private System.Windows.Forms.Button btnDown;
         private System.Windows.Forms.Button btnRight;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.Button btnLoad;
         private System.Windows.Forms.Label lblMap;
         private System.Windows.Forms.Label lblPlayerStats;
         private System.Windows.Forms.ListBox lstEnemies;

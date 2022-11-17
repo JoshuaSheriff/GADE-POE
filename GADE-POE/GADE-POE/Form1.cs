@@ -18,28 +18,14 @@ namespace GADE_POE
         {
             InitializeComponent();
         }
+
         private void Form1_Load(object sender, EventArgs e)
         {
             gameEngine = new GameEngine();
             lblAttackPrompt.Text = "";
             GenMap();
         }
-        private void GenMap()
-        {
-            lblMap.Text = gameEngine.GameMap.ToString();
-            lblPlayerStats.Text = gameEngine.GameMap.Hero.ToString();
 
-            lstEnemies.Items.Clear();
-            for (int enemy = 0; enemy < gameEngine.GameMap.totalEnemyNum; enemy++)
-            {
-                lstEnemies.Items.Add(gameEngine.GameMap.Enemies[enemy].ToString());
-            }
-        }
-        private void EnemiesTurn()
-        {
-            gameEngine.MoveEnemies();
-            gameEngine.EnemiesAttack();
-        }
         private void btnUp_Click(object sender, EventArgs e)
         {
             gameEngine.MovePlayer(Character.Movement.Up);
@@ -47,6 +33,7 @@ namespace GADE_POE
             GenMap();
             lblAttackPrompt.Text = "";
         }
+
         private void btnDown_Click(object sender, EventArgs e)
         {
             gameEngine.MovePlayer(Character.Movement.Down);
@@ -54,6 +41,7 @@ namespace GADE_POE
             GenMap();
             lblAttackPrompt.Text = "";
         }
+
         private void btnLeft_Click(object sender, EventArgs e)
         {
             gameEngine.MovePlayer(Character.Movement.Left);
@@ -61,6 +49,7 @@ namespace GADE_POE
             GenMap();
             lblAttackPrompt.Text = "";
         }
+
         private void btnRight_Click(object sender, EventArgs e)
         {
             gameEngine.MovePlayer(Character.Movement.Right);
@@ -68,6 +57,7 @@ namespace GADE_POE
             GenMap();
             lblAttackPrompt.Text = "";
         }
+
         private void btnStill_Click(object sender, EventArgs e)
         {
             gameEngine.MovePlayer(Character.Movement.NoMovement);
@@ -75,6 +65,7 @@ namespace GADE_POE
             GenMap();
             lblAttackPrompt.Text = "";
         }
+
         private void btnAttack_Click(object sender, EventArgs e)
         {
             Enemy enemy;
@@ -107,6 +98,7 @@ namespace GADE_POE
             gameEngine.EnemiesAttack(); // Enemies attack Hero after Hero attacks
             GenMap();
         }
+
         private void btnSave_Click(object sender, EventArgs e)
         {
             gameEngine.Save();
@@ -124,5 +116,23 @@ namespace GADE_POE
                 MessageBox.Show("Save file does not exist");
             }
         }
+
+        private void GenMap()
+        {
+            lblMap.Text = gameEngine.GameMap.ToString();
+            lblPlayerStats.Text = gameEngine.GameMap.Hero.ToString();
+
+            lstEnemies.Items.Clear();
+            for (int enemy = 0; enemy < gameEngine.GameMap.totalEnemyNum; enemy++)
+            {
+                lstEnemies.Items.Add(gameEngine.GameMap.Enemies[enemy].ToString());
+            }
+        }
+        private void EnemiesTurn()
+        {
+            gameEngine.MoveEnemies();
+            gameEngine.EnemiesAttack();
+        }
+      
     }
 }
