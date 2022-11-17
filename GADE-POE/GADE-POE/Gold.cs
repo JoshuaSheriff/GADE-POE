@@ -20,7 +20,7 @@ namespace GADE_POE
             GoldAmount = random.Next(1, 6);
             tileType = TileType.Gold;
         }
-        public Gold(int x, int y, int goldAmount) : base(x, y)
+        public Gold(int x, int y, int goldAmount) : base(x, y) //Used in loading/saving
         {
             GoldAmount = goldAmount;
             tileType = TileType.Gold;

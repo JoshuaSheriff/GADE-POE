@@ -1,0 +1,29 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace GADE_POE
+{
+    public abstract class Enemy : Character
+    {
+        protected Random random = new Random();
+        public TileType enemyType { get; set; } //Only used in ToString
+
+        public int enemyArray { get; set; }
+        public Enemy(int x, int y, int EnemyArray) : base(x, y)
+        {
+            enemyArray = EnemyArray;
+        }
+
+        public override string ToString()
+        {
+            return $"{enemyType} HP: {charHP}/{charMaxHP} Damage: {charDamage} [{TileX},{TileY}]";
+        }
+
+
+
+
+    }
+}

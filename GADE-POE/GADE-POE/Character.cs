@@ -58,7 +58,7 @@ namespace GADE_POE
 
         public void Move(Movement move, Tile charTile)
         {
-            Map.TileMap[TileY, TileX] = new EmptyTile(TileX, TileY);
+            Map.TileMap[TileY, TileX] = new EmptyTile(TileX, TileY); //Old space = empty tile
             switch (move)
             {
                 case Movement.NoMovement:
@@ -76,7 +76,7 @@ namespace GADE_POE
                     TileX += 1;
                     break;
             }
-            Map.TileMap[TileY, TileX] = charTile;
+            Map.TileMap[TileY, TileX] = charTile; //New space = char
         }
 
         public void PickUp(Item item)
