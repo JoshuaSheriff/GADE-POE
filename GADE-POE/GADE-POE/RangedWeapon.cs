@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GADE_POE
 {
-    class RangedWeapon : Weapon
+    public class RangedWeapon : Weapon
     {
         public enum RangedWeapons
         {

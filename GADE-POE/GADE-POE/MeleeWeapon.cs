@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GADE_POE
 {
-    class MeleeWeapon : Weapon //Made it an abstract as to not implement toString
+    public class MeleeWeapon : Weapon //Made it an abstract as to not implement toString
     {
         public enum Types
         {
