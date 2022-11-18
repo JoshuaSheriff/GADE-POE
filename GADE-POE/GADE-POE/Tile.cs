@@ -27,8 +27,13 @@ namespace GADE_POE
             Hero = 'H',
             SwampCreature = 'C',
             Mage = 'M',
+            Leader = 'L',
             Gold = 'G',
             Weapon = '|',
+            Dagger = 'd',
+            Longsword = 'l',
+            Rifle = 'r',
+            Longbow = 'b',
             Obstacle = 'X',
             EmptyTile = '.',
         }

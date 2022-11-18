@@ -73,6 +73,7 @@ namespace GADE_POE
         public void Buy(int num)
         {
             buyer.GoldPurse -= weaponArr[num].WeaponCost;
+            buyer.PickUp(weaponArr[num]);
             //PickUp()?? What Pickup() method?
             weaponArr[num] = RandomWeapon();
         }

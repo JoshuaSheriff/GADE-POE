@@ -22,6 +22,11 @@ namespace GADE_POE
         private int totalGoldSpawns;
         private int goldCounter;
 
+        private int totalWeaponDrops;
+        private int weaponCounter;
+
+        private int itemCounter;
+
         private Random random = new Random();
         private int mapHeight; // Y
         private int mapWidth; // X
@@ -29,7 +34,7 @@ namespace GADE_POE
         private int enemyCounter;
 
         public static Tile[,] TileMap { get; set; }
-        public Map(int minWidth, int maxWidth, int minHeight, int maxHeight, int totalEnemies, int goldDropsAmount)
+        public Map(int minWidth, int maxWidth, int minHeight, int maxHeight, int totalEnemies, int goldDropsAmount, int weaponDropsAmount)
         {
             mapWidth = random.Next(minWidth, maxWidth + 1);
             mapHeight = random.Next(minHeight, maxHeight + 1);
@@ -39,7 +44,11 @@ namespace GADE_POE
             Enemies = new Enemy[totalEnemyNum];
 
             totalGoldSpawns = goldDropsAmount;
-            Items = new Item[totalGoldSpawns];
+            totalWeaponDrops = weaponDropsAmount;
+
+            itemCounter = totalGoldSpawns + totalWeaponDrops;
+            Items = new Item[itemCounter];
+            itemCounter = 0;
 
             
             for (int row = 0; row < TileMap.GetLength(0); row++) //Empty Map creation
@@ -63,9 +72,11 @@ namespace GADE_POE
             int enemyRandomiser;
             for (enemyCounter = 0; enemyCounter < totalEnemyNum; enemyCounter++) //enemy spawner
             {
-                enemyRandomiser = random.Next(2);
+                enemyRandomiser = random.Next(3);
                 if (enemyRandomiser == 0)
                     Create(Tile.TileType.SwampCreature);
+                if (enemyRandomiser == 1)
+                    Create(Tile.TileType.Leader);
                 else
                     Create(Tile.TileType.Mage);
             }
@@ -74,6 +85,28 @@ namespace GADE_POE
             for (goldCounter = 0; goldCounter < totalGoldSpawns; goldCounter++) //gold spawner
             {
                 Create(Tile.TileType.Gold);
+                itemCounter++;
+            }
+
+            for (weaponCounter = 0; weaponCounter < totalWeaponDrops; weaponCounter++) //weapon spawner
+            {
+                int randomWeapon = random.Next(4);
+                switch (randomWeapon)
+                {
+                    case 0:
+                        Create(Tile.TileType.Dagger);
+                        break;
+                    case 1:
+                        Create(Tile.TileType.Longsword);
+                        break;
+                    case 2:
+                        Create(Tile.TileType.Rifle);
+                        break;
+                    case 3:
+                        Create(Tile.TileType.Longbow);
+                        break;
+                }
+                itemCounter++;
             }
 
             UpdateVision();
@@ -128,15 +161,40 @@ namespace GADE_POE
                 Enemies[enemyCounter] = new Mage(xPos, yPos, enemyCounter);
                 TileMap[yPos, xPos] = Enemies[enemyCounter];
             }
+            else if (type == Tile.TileType.Leader)
+            {
+                Enemies[enemyCounter] = new Leader(xPos, yPos, enemyCounter);
+                TileMap[yPos, xPos] = Enemies[enemyCounter];
+            }
             else if (type == Tile.TileType.Hero)// hero spawner
             {
                 Hero = new Hero(xPos, yPos, 30);
                 TileMap[yPos, xPos] = Hero;
             }
-            else // gold spawner
+            else if (type == Tile.TileType.Gold)// gold spawner
             {
-                Items[goldCounter] = new Gold(xPos, yPos);
-                TileMap[yPos, xPos] = Items[goldCounter];
+                Items[itemCounter] = new Gold(xPos, yPos);
+                TileMap[yPos, xPos] = Items[itemCounter];
+            }
+            else if(type == Tile.TileType.Dagger)
+            {
+                Items[itemCounter] = new MeleeWeapon("DAGGER",xPos, yPos);
+                TileMap[yPos, xPos] = Items[itemCounter];
+            }
+            else if (type == Tile.TileType.Longsword)
+            {
+                Items[itemCounter] = new MeleeWeapon("LONGSWORD", xPos, yPos);
+                TileMap[yPos, xPos] = Items[itemCounter];
+            }
+            else if (type == Tile.TileType.Rifle)
+            {
+                Items[itemCounter] = new RangedWeapon("RIFLE", xPos, yPos);
+                TileMap[yPos, xPos] = Items[itemCounter];
+            }
+            else if (type == Tile.TileType.Longbow)
+            {
+                Items[itemCounter] = new RangedWeapon("LONGBOW", xPos, yPos);
+                TileMap[yPos, xPos] = Items[itemCounter];
             }
             return TileMap[yPos, xPos];
         }

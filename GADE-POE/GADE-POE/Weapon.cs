@@ -15,7 +15,7 @@ namespace GADE_POE
         public virtual int WeaponRange { get { return weaponRange; } set { weaponRange = value; } }
 
         protected int weaponDurability;
-        public int WeaponDurability { get { return weaponDurability; } set { WeaponDurability = value; } }
+        public int WeaponDurability { get { return weaponDurability; } set { weaponDurability = value; } }
 
         protected int weaponCost;
         public virtual int WeaponCost { get { return weaponCost; } set { weaponCost = value; } }
