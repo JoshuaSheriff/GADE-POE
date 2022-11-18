@@ -29,23 +29,23 @@ namespace GADE_POE
             int directionAfter;
             
             for (int i = 0; i < 3; i++)
-            {
-                direction = random.Next(1, 5);
-                
+            {   
                 directionBefore = Math.Abs(LeaderTarget.TileX - TileX) + Math.Abs(LeaderTarget.TileY - TileY);
                 
+                direction = random.Next(1, 5);
+
                 move = (Movement)direction;
 
                 charVision = CharacterVision[(int)move];
 
                 directionAfter = Math.Abs(LeaderTarget.TileX - charVision.TileX) + Math.Abs(LeaderTarget.TileY - charVision.TileY);
-                
-                if (CharacterVision[(int)move].tileType == TileType.EmptyTile) //Validity Check
+
+                if (directionBefore > directionAfter)
                 {
-                   if (directionAfter <= directionBefore)
+                    if (CharacterVision[(int)move].tileType == TileType.EmptyTile) //Validity Check
                     {
                         return move;
-                    } 
+                    }
                 }
             }
             return Movement.NoMovement;

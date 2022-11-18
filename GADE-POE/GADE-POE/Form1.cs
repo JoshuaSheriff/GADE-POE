@@ -70,52 +70,44 @@ namespace GADE_POE
         {
             Enemy enemy;
 
-            try // Check if an enemy is selected
+            try // Check if player selected an enemy
             {
                 enemy = gameEngine.GameMap.Enemies[lstEnemies.SelectedIndex];
             }
             catch (IndexOutOfRangeException)
             {
                 lblAttackPrompt.Text = "Select an enemy from the list";
-                return; // Don't continue if there is no enemy selected
+                return;
             }
 
-            // Check if enemy is in range
-            if (gameEngine.GameMap.Hero.CheckRange(enemy))
+            
+            if (gameEngine.GameMap.Hero.CheckRange(enemy)) // Check if enemy is in range
             {
                 gameEngine.GameMap.Hero.Attack(enemy);
                 gameEngine.CheckForDead(enemy);
-                lblAttackPrompt.Text = "Hit!";
+                lblAttackPrompt.Text = $"{enemy.enemyType} was hit Hit!";
             }
             else if (!gameEngine.GameMap.Hero.CheckRange(enemy))
             {
-                lblAttackPrompt.Text = "Enemy out of range";
+                lblAttackPrompt.Text = $"{enemy.enemyType} is out of range";
             }
             else
             {
                 lblAttackPrompt.Text = "Wrong enemy";
             }
-            gameEngine.EnemiesAttack(); // Enemies attack Hero after Hero attacks
+            gameEngine.EnemiesAttack();
             GenMap();
         }
 
-        private void btnSave_Click(object sender, EventArgs e)
-        {
-            gameEngine.Save();
-        }
+        //private void btnSave_Click(object sender, EventArgs e) 
+        //{                                                         DO NOT CHANGE EITHER OF THESE
+            
+        //}
 
-        private void btnLoad_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                gameEngine.Load();
-                GenMap();
-            }
-            catch (FileNotFoundException)
-            {
-                MessageBox.Show("Save file does not exist");
-            }
-        }
+        //private void btnLoad_Click(object sender, EventArgs e)
+        //{
+            
+        //}
 
         private void GenMap()
         {
@@ -133,6 +125,23 @@ namespace GADE_POE
             gameEngine.MoveEnemies();
             gameEngine.EnemiesAttack();
         }
-      
+
+        private void btnSave_Click_1(object sender, EventArgs e) //DO NOT CHANGE
+        {
+            gameEngine.Save();
+        }
+
+        private void btnLoad_Click_1(object sender, EventArgs e) //DO NOT CHANGE
+        {
+            try
+            {
+                gameEngine.Load();
+                GenMap();
+            }
+            catch (FileNotFoundException)
+            {
+                MessageBox.Show("Save file does not exist");
+            }
+        }
     }
 }
