@@ -42,7 +42,11 @@ namespace GADE_POE
 
         public override string ToString()
         {
-            return $"Player Stats:\nHP: {charHP}/{charMaxHP}\nDamage: {charDamage}\nGold: {GoldPurse}\n[{TileX},{TileY}]";
+            return $"Player Stats:\n" +
+                $"HP: {charHP}/{charMaxHP}\n" +
+                $"Damage: {charDamage}\n" +
+                $"Gold: {GoldPurse}\n" +
+                $"[{TileX},{TileY}]";
         }
     }
 }
