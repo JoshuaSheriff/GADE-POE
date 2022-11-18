@@ -9,3 +9,14 @@ C:\VEGA\VEGA Semester 2\VEGA GADE 2\Repos\GADE-POE\GADE-POE\GADE-POE\bin\Debug\G
 C:\VEGA\VEGA Semester 2\VEGA GADE 2\Repos\GADE-POE\GADE-POE\GADE-POE\bin\Debug\GADE-POE.pdb
 C:\VEGA\VEGA Semester 2\VEGA GADE 2\Repos\GADE-POE\GADE-POE\GADE-POE\obj\Debug\GADE-POE.exe
 C:\VEGA\VEGA Semester 2\VEGA GADE 2\Repos\GADE-POE\GADE-POE\GADE-POE\obj\Debug\GADE-POE.pdb
+D:\VEGA\3rd Year\Sem 2\GADE6112\GADE-POE\GADE-POE\GADE-POE\bin\Debug\GADE-POE.exe.config
+D:\VEGA\3rd Year\Sem 2\GADE6112\GADE-POE\GADE-POE\GADE-POE\bin\Debug\GADE-POE.exe
+D:\VEGA\3rd Year\Sem 2\GADE6112\GADE-POE\GADE-POE\GADE-POE\bin\Debug\GADE-POE.pdb
+D:\VEGA\3rd Year\Sem 2\GADE6112\GADE-POE\GADE-POE\GADE-POE\obj\Debug\GADE-POE.csproj.AssemblyReference.cache
+D:\VEGA\3rd Year\Sem 2\GADE6112\GADE-POE\GADE-POE\GADE-POE\obj\Debug\GADE-POE.csproj.SuggestedBindingRedirects.cache
+D:\VEGA\3rd Year\Sem 2\GADE6112\GADE-POE\GADE-POE\GADE-POE\obj\Debug\GADE_POE.Form1.resources
+D:\VEGA\3rd Year\Sem 2\GADE6112\GADE-POE\GADE-POE\GADE-POE\obj\Debug\GADE_POE.Properties.Resources.resources
+D:\VEGA\3rd Year\Sem 2\GADE6112\GADE-POE\GADE-POE\GADE-POE\obj\Debug\GADE-POE.csproj.GenerateResource.cache
+D:\VEGA\3rd Year\Sem 2\GADE6112\GADE-POE\GADE-POE\GADE-POE\obj\Debug\GADE-POE.csproj.CoreCompileInputs.cache
+D:\VEGA\3rd Year\Sem 2\GADE6112\GADE-POE\GADE-POE\GADE-POE\obj\Debug\GADE-POE.exe
+D:\VEGA\3rd Year\Sem 2\GADE6112\GADE-POE\GADE-POE\GADE-POE\obj\Debug\GADE-POE.pdb
