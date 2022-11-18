@@ -15,6 +15,8 @@ namespace GADE_POE
             get { return gameMap; }
             set { gameMap = value; }
         }
+
+        private Shop shop;
         public GameEngine()
         {
             GameMap = new Map(10, 15, 5, 10, 4, 3);

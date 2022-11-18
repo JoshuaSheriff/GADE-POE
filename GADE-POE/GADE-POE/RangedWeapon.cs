@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GADE_POE
 {
-    abstract class RangedWeapon : Weapon
+    class RangedWeapon : Weapon
     {
         public enum RangedWeapons
         {
@@ -38,6 +38,11 @@ namespace GADE_POE
         public void RangedWeaponLoad(string weaponTypeToCreateFromSave, int weaponDurability)// 'Constuctor' for when loading the weapon
         {
 
+        }
+
+        public override string ToString()
+        {
+            throw new NotImplementedException();
         }
     }
 }
