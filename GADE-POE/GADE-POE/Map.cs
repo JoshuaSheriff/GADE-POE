@@ -75,10 +75,11 @@ namespace GADE_POE
             for (enemyCounter = 0; enemyCounter < totalEnemyNum; enemyCounter++) //enemy spawner
             {
                 enemyRandomiser = random.Next(3);
-                if (enemyRandomiser == 0)
-                    Create(Tile.TileType.SwampCreature);
+
                 if (enemyRandomiser == 1)
                     Create(Tile.TileType.Leader);
+                else Sif (enemyRandomiser == 2)
+                    Create(Tile.TileType.SwampCreature);
                 else
                     Create(Tile.TileType.Mage);
             }

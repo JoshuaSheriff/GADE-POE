@@ -19,7 +19,7 @@ namespace GADE_POE
         private Shop shop;
         public GameEngine()
         {
-            GameMap = new Map(10, 15, 5, 10, 4, 3, 3);
+            GameMap = new Map(10, 20, 8, 10, 6, 3, 3);
         }
 
         public void MovePlayer(Character.Movement direction)
