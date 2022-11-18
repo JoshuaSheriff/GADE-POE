@@ -20,3 +20,14 @@ D:\VEGA\3rd Year\Sem 2\GADE6112\GADE-POE\GADE-POE\GADE-POE\obj\Debug\GADE-POE.cs
 D:\VEGA\3rd Year\Sem 2\GADE6112\GADE-POE\GADE-POE\GADE-POE\obj\Debug\GADE-POE.csproj.CoreCompileInputs.cache
 D:\VEGA\3rd Year\Sem 2\GADE6112\GADE-POE\GADE-POE\GADE-POE\obj\Debug\GADE-POE.exe
 D:\VEGA\3rd Year\Sem 2\GADE6112\GADE-POE\GADE-POE\GADE-POE\obj\Debug\GADE-POE.pdb
+C:\Users\Joshua Sheriff\Documents\GitHub\GADE-POE\GADE-POE\GADE-POE\bin\Debug\GADE-POE.exe.config
+C:\Users\Joshua Sheriff\Documents\GitHub\GADE-POE\GADE-POE\GADE-POE\bin\Debug\GADE-POE.exe
+C:\Users\Joshua Sheriff\Documents\GitHub\GADE-POE\GADE-POE\GADE-POE\bin\Debug\GADE-POE.pdb
+C:\Users\Joshua Sheriff\Documents\GitHub\GADE-POE\GADE-POE\GADE-POE\obj\Debug\GADE-POE.csproj.AssemblyReference.cache
+C:\Users\Joshua Sheriff\Documents\GitHub\GADE-POE\GADE-POE\GADE-POE\obj\Debug\GADE-POE.csproj.SuggestedBindingRedirects.cache
+C:\Users\Joshua Sheriff\Documents\GitHub\GADE-POE\GADE-POE\GADE-POE\obj\Debug\GADE_POE.Form1.resources
+C:\Users\Joshua Sheriff\Documents\GitHub\GADE-POE\GADE-POE\GADE-POE\obj\Debug\GADE_POE.Properties.Resources.resources
+C:\Users\Joshua Sheriff\Documents\GitHub\GADE-POE\GADE-POE\GADE-POE\obj\Debug\GADE-POE.csproj.GenerateResource.cache
+C:\Users\Joshua Sheriff\Documents\GitHub\GADE-POE\GADE-POE\GADE-POE\obj\Debug\GADE-POE.csproj.CoreCompileInputs.cache
+C:\Users\Joshua Sheriff\Documents\GitHub\GADE-POE\GADE-POE\GADE-POE\obj\Debug\GADE-POE.exe
+C:\Users\Joshua Sheriff\Documents\GitHub\GADE-POE\GADE-POE\GADE-POE\obj\Debug\GADE-POE.pdb
