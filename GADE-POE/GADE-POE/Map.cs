@@ -78,7 +78,7 @@ namespace GADE_POE
 
                 if (enemyRandomiser == 1)
                     Create(Tile.TileType.Leader);
-                else Sif (enemyRandomiser == 2)
+                else if (enemyRandomiser == 2)
                     Create(Tile.TileType.SwampCreature);
                 else
                     Create(Tile.TileType.Mage);
