@@ -25,12 +25,14 @@ namespace GADE_POE
                     WeaponRange = 3;
                     WeaponDamage = 5;
                     WeaponCost = 7;
+                    tileType = TileType.Rifle;
                     break;
                 case "LONGBOW":
                     WeaponDurability = 4;
                     WeaponRange = 2;
                     WeaponDamage = 4;
                     WeaponCost = 6;
+                    tileType = TileType.Longbow;
                     break;
             }
         }

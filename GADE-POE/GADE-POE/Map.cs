@@ -69,6 +69,8 @@ namespace GADE_POE
                     }
                 }
             }
+            Create(Tile.TileType.Hero); //hero spawner
+
             int enemyRandomiser;
             for (enemyCounter = 0; enemyCounter < totalEnemyNum; enemyCounter++) //enemy spawner
             {
@@ -80,7 +82,7 @@ namespace GADE_POE
                 else
                     Create(Tile.TileType.Mage);
             }
-            Create(Tile.TileType.Hero); //hero spawner
+            
 
             for (goldCounter = 0; goldCounter < totalGoldSpawns; goldCounter++) //gold spawner
             {
@@ -163,7 +165,7 @@ namespace GADE_POE
             }
             else if (type == Tile.TileType.Leader)
             {
-                Enemies[enemyCounter] = new Leader(xPos, yPos, enemyCounter);
+                Enemies[enemyCounter] = new Leader(xPos, yPos, enemyCounter, Hero);
                 TileMap[yPos, xPos] = Enemies[enemyCounter];
             }
             else if (type == Tile.TileType.Hero)// hero spawner

@@ -24,11 +24,13 @@ namespace GADE_POE
                     WeaponDurability = 10;
                     WeaponDamage = 3;
                     WeaponCost = 3;
+                    tileType = TileType.Dagger;
                     break;
                 case "LONGSWORD":
                     WeaponDurability = 6;
                     WeaponDamage = 4;
                     WeaponCost = 5;
+                    tileType = TileType.Longsword;
                     break;
             }
         }
