@@ -99,15 +99,26 @@ namespace GADE_POE
             GenMap();
         }
 
-        //private void btnSave_Click(object sender, EventArgs e) 
-        //{                                                         DO NOT CHANGE EITHER OF THESE
-            
-        //}
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            //DO NOT CHANGE EITHER OF THESE
+            gameEngine.Save();
 
-        //private void btnLoad_Click(object sender, EventArgs e)
-        //{
-            
-        //}
+
+        }
+
+        private void btnLoad_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                gameEngine.Load();
+                GenMap();
+            }
+            catch (FileNotFoundException)
+            {
+                MessageBox.Show("Save file does not exist");
+            }
+        }
 
         private void GenMap()
         {
@@ -124,24 +135,6 @@ namespace GADE_POE
         {
             gameEngine.MoveEnemies();
             gameEngine.EnemiesAttack();
-        }
-
-        private void btnSave_Click_1(object sender, EventArgs e) //DO NOT CHANGE
-        {
-            gameEngine.Save();
-        }
-
-        private void btnLoad_Click_1(object sender, EventArgs e) //DO NOT CHANGE
-        {
-            try
-            {
-                gameEngine.Load();
-                GenMap();
-            }
-            catch (FileNotFoundException)
-            {
-                MessageBox.Show("Save file does not exist");
-            }
         }
     }
 }

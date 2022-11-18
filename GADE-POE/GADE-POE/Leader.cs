@@ -27,24 +27,40 @@ namespace GADE_POE
         public override Movement ReturnMove(Movement move = 0)
         {
             int direction;
-            int directionBefore;
+            int distanceBefore;
             Tile charVision;
-            int directionAfter;
+            int distanceAfter;
+            bool canMoveCloser = false;
             
-            for (int i = 0; i < 3; i++)
+            for (int i = 0; i < 4; i++)
             {   
-                directionBefore = Math.Abs(LeaderTarget.TileX - TileX) + Math.Abs(LeaderTarget.TileY - TileY);
-                
-                direction = random.Next(1, 5);
+                distanceBefore = Math.Abs(LeaderTarget.TileX - TileX) + Math.Abs(LeaderTarget.TileY - TileY);
+
+                //direction = random.Next(1, 5);
+                direction = i;
 
                 move = (Movement)direction;
 
                 charVision = CharacterVision[(int)move];
 
-                directionAfter = Math.Abs(LeaderTarget.TileX - charVision.TileX) + Math.Abs(LeaderTarget.TileY - charVision.TileY);
+                distanceAfter = Math.Abs(LeaderTarget.TileX - charVision.TileX) + Math.Abs(LeaderTarget.TileY - charVision.TileY);
 
-                if (directionBefore > directionAfter)
+                if (distanceBefore >= distanceAfter)
                 {
+                    if (CharacterVision[(int)move].tileType == TileType.EmptyTile) //Validity Check
+                    {
+                        return move;
+                        canMoveCloser = true;
+                    }
+                    
+                }
+            }
+            if (canMoveCloser == false)
+            {
+                for (int i = 0; i < 3; i++)
+                {
+                    direction = random.Next(1, 5);
+                    move = (Movement)direction;
                     if (CharacterVision[(int)move].tileType == TileType.EmptyTile) //Validity Check
                     {
                         return move;
