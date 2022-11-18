@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GADE_POE
 {
-    abstract class Weapon : Item
+    public abstract class Weapon : Item
     {
         protected int weaponDamage;
         public int WeaponDamage { get { return weaponDamage; } set { weaponDamage = value; } }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GADE_POE
 {
-    class Shop
+    public class Shop
     {
         private Weapon[] weaponArr;
 

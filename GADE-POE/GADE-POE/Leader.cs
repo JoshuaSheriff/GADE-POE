@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GADE_POE
 {
-    class Leader : Enemy
+    public class Leader : Enemy
     {
         private Tile leaderTarget;
         public Tile LeaderTarget { get { return leaderTarget; } set { leaderTarget = value; } }
