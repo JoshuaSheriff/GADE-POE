@@ -19,7 +19,14 @@ namespace GADE_POE
 
         public override string ToString()
         {
-            return $"{enemyType} HP: {charHP}/{charMaxHP} Damage: {charDamage} [{TileX},{TileY}]";
+            if (characterWeapon == null) //They don't wield a weapon
+            {
+                return $"Barehanded: {enemyType} ({charHP}/{charMaxHP}HP) at [{TileX},{TileY}] ({charDamage}DMG)";
+            }
+            else //If they have a weapon equipped
+            {
+                return $"Equipped: {enemyType} ({charHP}/{charMaxHP}HP) at [{TileX},{TileY}] with {CharacterWeapon.tileType} ({characterWeapon.WeaponDurability}x{characterWeapon.WeaponDamage} DMG)";
+            }
         }
 
 

@@ -11,6 +11,8 @@ namespace GADE_POE
         private Tile leaderTarget;
         public Tile LeaderTarget { get { return leaderTarget; } set { leaderTarget = value; } }
 
+        private MeleeWeapon leaderWeapon = new MeleeWeapon("LONGSWORD", 0,0);
+
         public Leader(int leaderX, int leaderY, int leaderEnemyArray, Tile target) : base(leaderX, leaderY, leaderEnemyArray)
         {
             CharMaxHP = 20;
@@ -19,6 +21,7 @@ namespace GADE_POE
             LeaderTarget = target;
             enemyType = TileType.Leader;
             tileType = TileType.Leader;
+            characterWeapon = leaderWeapon;
         }
 
         public override Movement ReturnMove(Movement move = 0)

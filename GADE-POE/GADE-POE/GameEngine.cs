@@ -30,6 +30,26 @@ namespace GADE_POE
                 GameMap.Hero.PickUp(GameMap.GetItemAtPosition(GameMap.Hero.TileX, GameMap.Hero.TileY));
                 gameMap.Hero.HeroOnGold = false;
             }
+            if (GameMap.Hero.HeroOnDagger)
+            {
+                GameMap.Hero.PickUp(GameMap.GetItemAtPosition(GameMap.Hero.TileX, GameMap.Hero.TileY));
+                gameMap.Hero.HeroOnDagger = false;
+            }
+            if (GameMap.Hero.HeroOnLongsword)
+            {
+                GameMap.Hero.PickUp(GameMap.GetItemAtPosition(GameMap.Hero.TileX, GameMap.Hero.TileY));
+                gameMap.Hero.HeroOnLongsword = false;
+            }
+            if (GameMap.Hero.HeroOnRifle)
+            {
+                GameMap.Hero.PickUp(GameMap.GetItemAtPosition(GameMap.Hero.TileX, GameMap.Hero.TileY));
+                gameMap.Hero.HeroOnRifle = false;
+            }
+            if (GameMap.Hero.HeroOnLongbow)
+            {
+                GameMap.Hero.PickUp(GameMap.GetItemAtPosition(GameMap.Hero.TileX, GameMap.Hero.TileY));
+                gameMap.Hero.HeroOnLongbow = false;
+            }
             GameMap.UpdateVision();
         }
 

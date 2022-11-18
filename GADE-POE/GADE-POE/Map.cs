@@ -171,7 +171,7 @@ namespace GADE_POE
             }
             else if (type == Tile.TileType.Hero)// hero spawner
             {
-                Hero = new Hero(xPos, yPos, 30);
+                Hero = new Hero(xPos, yPos, 100);
                 TileMap[yPos, xPos] = Hero;
             }
             else if (type == Tile.TileType.Gold)// gold spawner

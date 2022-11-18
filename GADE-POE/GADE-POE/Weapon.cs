@@ -20,6 +20,9 @@ namespace GADE_POE
         protected int weaponCost;
         public virtual int WeaponCost { get { return weaponCost; } set { weaponCost = value; } }
 
+        public TileType weaponTileType { get; set; } //Only used in ToString
+
+
         protected enum weaponType
         {
             MELEE,

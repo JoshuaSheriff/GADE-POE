@@ -26,6 +26,10 @@ namespace GADE_POE
 
         public int GoldPurse { get; set; }
 
+        protected Weapon characterWeapon;
+
+        public Weapon CharacterWeapon { get { return characterWeapon; } }
+
         protected int charDamage { get; set; }
 
         public enum Movement
@@ -40,7 +44,14 @@ namespace GADE_POE
 
         public virtual void Attack(Character target)
         {
-            target.charHP -= charDamage;
+            if (characterWeapon == null)
+            {
+                target.charHP -= charDamage;
+            }
+            else
+            {
+                target.charHP -= characterWeapon.WeaponDamage;
+            }
         }
         public bool IsDead()
         {
@@ -49,7 +60,14 @@ namespace GADE_POE
 
         public virtual bool CheckRange(Character target)
         {
-            return DistanceTo(target) == 1;
+            if (characterWeapon == null) //No weapon
+            {
+                return DistanceTo(target) == 1;
+            }
+            else
+            {
+                return DistanceTo(target) <= characterWeapon.WeaponRange;
+            }
         }
         private int DistanceTo(Character target)
         {
@@ -86,8 +104,32 @@ namespace GADE_POE
                 Gold gold = item as Gold;
                 GoldPurse += gold.GoldAmount;
             }
+            else if (item.tileType == Weapon.TileType.Dagger)
+            {
+                Weapon weapon = item as Weapon;
+                Equip(weapon);
+            }
+            else if (item.tileType == Weapon.TileType.Longsword)
+            {
+                Weapon weapon = item as Weapon;
+                Equip(weapon);
+            }
+            else if (item.tileType == Weapon.TileType.Rifle)
+            {
+                Weapon weapon = item as Weapon;
+                Equip(weapon);
+            }
+            else if (item.tileType == Weapon.TileType.Longbow)
+            {
+                Weapon weapon = item as Weapon;
+                Equip(weapon);
+            }
         }
 
+        private void Equip(Weapon w)
+        {
+            characterWeapon = w;
+        }
 
         public abstract Movement ReturnMove(Movement move = 0);
 

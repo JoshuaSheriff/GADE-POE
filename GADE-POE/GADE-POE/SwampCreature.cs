@@ -8,6 +8,8 @@ namespace GADE_POE
 {
     public class SwampCreature : Enemy
     {
+        private MeleeWeapon swampCreatureWeapon = new MeleeWeapon("DAGGER", 0, 0);
+
         public SwampCreature(int x, int y, int EnemyArray) : base(x, y, EnemyArray) //Default Constructor
         {
             charMaxHP = 10;
@@ -15,6 +17,7 @@ namespace GADE_POE
             charDamage = 1;
             enemyType = TileType.SwampCreature;
             tileType = TileType.SwampCreature;
+            characterWeapon = swampCreatureWeapon;
         }
         public SwampCreature(int x, int y, int EnemyArray, int hp) : base(x, y, EnemyArray) //Used with loading/saving
         {
